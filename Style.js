@@ -22,7 +22,7 @@ const showWinner=(userWin, userChoice, compChoice)=>{
     if(userWin){
         userScore++;
         userScorePara.innerText = userScore;
-        console.log("You Won!");
+        // console.log("You Won!");
         msg.innerText = `You Won! Your ${userChoice} beats ${compChoice}`;
         msg.style.backgroundColor = "green";
     }else{
@@ -35,7 +35,7 @@ const showWinner=(userWin, userChoice, compChoice)=>{
 };
 
 const playGame=(userChoice)=>{
-    console.log("User choice =",userChoice);
+    // console.log("User choice =",userChoice);
     // Generate computer choice
     const compChoice=genComputerChoice();
     console.log("Computer Choice=",compChoice);
